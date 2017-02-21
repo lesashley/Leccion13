@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejercicio Guiado</title>
+</head>
+<body ALIGN=center>
+  <section>
+    <form action="">
+      <h1 ALIGN=center>Formulario de Datos</h1>
+      <div>
+        <label for="nombre">Nombres:</label><br>
+        <input title="Se necesita un nombre" id="nombre" type="text" pattern="[A-Za-z]{1,}" required>
+      </div><br>
+      <div>
+        <label for="apellido">Apellidos:</label><br>
+        <input id="apellido" type="text" required>
+      </div><br>
+      <div>
+        <label for="tel">Teléfono:</label><br>
+        <input type="tel" id ="tel" pattern="[9-0]{9}" required/>
+      </div><br>
+      <div>
+        <label for ="item">Escoge un carro para continuar</label><br></br>
+        <select name="car" required>
+          <option  value=""> Elige una opción </option>
+           <option value="1">Mercedes</option>
+           <option value="2">Toyota</option>
+           <option value="3">Ford</option>
+           <option value="4">Ferrari</option>
+        </select><br></br>
+      </div>
+      <div>
+        <label for="email">Email:</label><br>
+        <input id="email" type="email" name="email" required>
+      </div>
+      <br>
+      <div>
+        <label for="password">Crea tu password:</label><br>
+        <input id="passwod" type="password"  pattern=".{6,}" required/>
+      </div><br>
+      <center>
+      <button type ="submit">Enviar</button>
+    </center>
+    </form>
+  </section>
+</body>
+</html>
